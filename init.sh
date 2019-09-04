@@ -1,1 +1,1 @@
-gunicorn app.app:api
+gunicorn app.app:api --reload
