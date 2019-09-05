@@ -26,9 +26,9 @@ class InsertProject(base):
             new_client = InsertProject(project_id=uuid4(), project_name=name)
             InsertProject.session.add(new_client)  
 
-            InsertProject.session.flush()
+            InsertProject.session.commit()
+            
             new_id = str(new_client.project_id)
-            print(new_id)
 
             return {'id': new_id, 'name':name}
         except:
