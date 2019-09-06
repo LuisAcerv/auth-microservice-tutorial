@@ -1,0 +1,1 @@
+docker exec psql pg_dump -U postgres authdb > backup.sql
